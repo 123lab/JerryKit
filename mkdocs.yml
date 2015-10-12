@@ -1,1 +1,5 @@
-site_name: My Docs
+site_name: ZhangJG
+pages:
+- 个人简历: 'index.md'
+- 项目经历: 'project.md'
+- 开源图形引擎: 'engine.md'
