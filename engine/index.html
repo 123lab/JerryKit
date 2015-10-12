@@ -7,14 +7,14 @@
         
         
         
-        <link rel="shortcut icon" href="./img/favicon.ico">
+        <link rel="shortcut icon" href="../img/favicon.ico">
 
-	<title>ZhangJG</title>
+	<title>开源图形引擎 - ZhangJG</title>
 
-        <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="./css/font-awesome-4.0.3.css" rel="stylesheet">
-        <link href="./css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="./css/highlight.css">
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -43,7 +43,7 @@
             
 
             <!-- Main title -->
-            <a class="navbar-brand" href=".">ZhangJG</a>
+            <a class="navbar-brand" href="..">ZhangJG</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -54,19 +54,19 @@
                 
                 
                     <li >
-                        <a href=".">个人简历</a>
+                        <a href="..">个人简历</a>
                     </li>
                 
                 
                 
                     <li >
-                        <a href="project/">项目经历</a>
+                        <a href="../project/">项目经历</a>
                     </li>
                 
                 
                 
-                    <li >
-                        <a href="engine/">开源图形引擎</a>
+                    <li class="active">
+                        <a href="./">开源图形引擎</a>
                     </li>
                 
                 
@@ -80,8 +80,8 @@
                     </a>
                 </li>
                 
-                    <li class="disabled">
-                        <a rel="next" >
+                    <li >
+                        <a rel="next" href="../project/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
@@ -99,15 +99,43 @@
 
         <div class="container">
             
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#glslengine">GLSLEngine</a></li>
+        
+            <li><a href="#glslengine_1">GlslEngine主要用到的库</a></li>
+        
+            <li><a href="#glslengine_2">GlslEngine的参考视频</a></li>
+        
+            <li><a href="#learnopengl">LearnOpenGL</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
 
-    <div class="row-fluid">
-      <div id="main-content" class="span12">
-        <h1 id="404-page-not-found" style="text-align: center">404</h1>
-        <p style="text-align: center"><strong>Page not found</strong></p>
-      </div>
-    </div>
+<h2 id="glslengine">GLSLEngine</h2>
+<hr />
+<p><a href="https://coding.net/u/antyard/p/GlslEngine/git">GlslEngine</a> 是一个轻量级的虚拟现实开发工具，目前共有类26个，代码2310行。其内容主要涵盖了着色器、相机、场景控制、地形、天空盒等方面，是大家学习计算机图形学一个非常好的途径。该项目目前处于开源状态，大家可以通过Git方式获取、学习。</p>
+<p><img alt="" src="../images/proj2.jpg" /></p>
+<hr />
+<h3 id="glslengine_1">GlslEngine主要用到的库</h3>
+<p>&Theta; <strong>glew:</strong> GLEW是一个跨平台的C++扩展库，基于OpenGL图形接口。window目前只支持OpenGL1.1的涵数，但 OpenGL现在都发展到4.4以上了，要使用这些OpenGL的高级特性，就必须下载最新的扩展。</p>
+<p>&Theta; <strong>glfw:</strong> 一个免费、开源、跨平台的OpenGL环境创建工具，并支持多屏显示、多种外设，取代了大家之前肯能较为熟悉的glut。</p>
+<p>&Theta; <strong>Assimp:</strong> Open Asset Import Library，主要用于常用3D模型的加载，支持常见的3D模型格式大致有，3D Studio Max 3DS (3ds)、Wavefront Object (obj) 、Stanford Polygon Library (ply) 、Stereolithography (stl)等，关于更多的模型格式请参见Assimp文档。</p>
+<p>&Theta; <strong>SOIL:</strong> Simple OpenGL Image Library， 该库用于加载图片，生成OpenGL环境中的纹理。支持的格式有BMP,PNG,JPG,TGA等。</p>
+<hr />
+<h2>学习参考资料</h2>
 
-
+<h3 id="glslengine_2">GlslEngine的参考视频</h3>
+<p>下载地址：<a href="http://pan.baidu.com/s/1jGrPI8u">http://pan.baidu.com/s/1jGrPI8u</a></p>
+<hr />
+<h3 id="learnopengl">LearnOpenGL</h3>
+<p>英文版：<a href="http://www.learnopengl.com/">http://www.learnopengl.com/</a></p>
+<p>中文版：<a href="http://learnopengl-cn.readthedocs.org/zh/latest/">http://learnopengl-cn.readthedocs.org/zh/latest/</a></p>
+<p>源码下载地址：<a href="https://github.com/JoeyDeVries/LearnOpenGL">https://github.com/JoeyDeVries/LearnOpenGL</a></p></div>
+            
         </div>
 
         <footer class="col-md-12">
@@ -116,12 +144,12 @@
             <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
 
-        <script src="./js/jquery-1.10.2.min.js"></script>
-        <script src="./js/bootstrap-3.0.3.min.js"></script>
-        <script src="./js/highlight.pack.js"></script>
-        <script>var base_url = '.';</script>
-        <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
-        <script src="./js/base.js"></script>
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
             <div class="modal-dialog">

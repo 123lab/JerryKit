@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+	<title>项目经历 - ZhangJG</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">ZhangJG</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">个人简历</a>
+                    </li>
+                
+                
+                
+                    <li class="active">
+                        <a href="./">项目经历</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../engine/">开源图形引擎</a>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="..">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../engine/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#01-rov">01. 深海ROV操作训练系统</a></li>
+        
+            <li><a href="#02-antengine">02. AntEngine图形引擎的开发(进行中)</a></li>
+        
+            <li><a href="#03">03. 软组织形变建模的研究（省自然基金项目）</a></li>
+        
+            <li><a href="#04-863">04. 微创血管介入手术机器人系统研究（国家863重点项目）</a></li>
+        
+            <li><a href="#05-iauvc">05. 国际水下机器人竞赛仿真系统(IAUVC)</a></li>
+        
+            <li><a href="#06-863">06. 多功能微型仿生鱼三维仿真系统（国家863项目）</a></li>
+        
+            <li><a href="#07-leapmotion">07. 基于LeapMotion的交互式游戏设计</a></li>
+        
+            <li><a href="#08">08. 柔软织物形变仿真平台的研究</a></li>
+        
+            <li><a href="#09-vxworks">09. 基于VxWorks的声呐图像处理系统</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="01-rov">01. 深海ROV操作训练系统</h2>
+<hr />
+<p>职位描述：项目负责人</p>
+<p><strong>项目描述：</strong>该项目通过对水下自主机器人及其机械臂的相关操作模拟，达到训练操作人员的目的。该系统利用MFC框架实现交互界面、开源图形库Ogre3D和物理引擎Bullet分别实现视觉渲染和运动状态控制，系统通过采集HOTAS WARTHOG操纵杆的数据来实现对ROV及其附属机械臂的控制。利用网络通信，实现多台主机上的多屏幕下不同视角的同步显示。</p>
+<p><strong>完成工作：</strong>系统框架搭建、MFC界面和Ogre3D图形引擎的结合、物理引擎Bullet的集成、利用（Socket）套接字通信实现分屏显示、利用Bullet实现ROV的拖绳（软体）模拟。</p>
+<p><img alt="" src="../../images/proj1.jpg" /></p>
+<h3 id="02-antengine">02. AntEngine图形引擎的开发(进行中)</h3>
+<hr />
+<p>职位描述：项目负责人</p>
+<p><strong>项目描述：</strong>该项目定位于构建一个轻量级的图形渲染引擎。主要功能包括基于glfw的窗口构建、事件的响应、GLSL文件的解析、图片以及模型等资源的加载、多重纹理、地形、天空盒以及角色相机和碰撞检测等。利用该系统能够实现三维应用程序的快速开发。目前该项目仍在进行中，上述功能均已实现，后期工作将侧重于代码的优化和高级图形学知识的应用，如LOD和大场景的内存管理等方面，力争进一步提高该引擎的性能。</p>
+<p><strong>完成工作：</strong>OpenGL底层代码封装，包括工具类的编写、模型以及纹理贴图等资源的解析、天空盒、基于高程图的地形、多重纹理、引擎的整体测试、物理引擎Bullet的集成。</p>
+<p><img alt="" src="../../images/proj2.jpg" /></p>
+<h3 id="03">03. 软组织形变建模的研究（省自然基金项目）</h3>
+<hr />
+<p>职位描述：项目负责人</p>
+<p><strong>项目描述：</strong>利用计算机图形技术实现带有触觉反馈功能的虚拟手术训练仿真系统。首先对一组连续的CT图像进行三维重建，从而获得手术训练对象的几何模型，然后利用物理建模方法（如质点弹簧、有限元等）模拟软组织在外力作用下的形变效果。同时根据碰撞检测算法实时检测出虚拟手术器械与软组织模型之间的碰撞并计算相应反馈力的大小。</p>
+<p><strong>完成工作：</strong>系统整体框架搭建、质点弹簧模型和有限元方法的编程实现、数值解算方法编程实现、碰撞检测算法以及触觉反馈算法编程实现。</p>
+<p><img alt="" src="../../images/proj3.jpg" /></p>
+<h3 id="04-863">04. 微创血管介入手术机器人系统研究（国家863重点项目）</h3>
+<hr />
+<p>职位描述：虚拟仿真系统负责人</p>
+<p><strong>项目描述：</strong>该项目主要包括基于触觉反馈的介入手术硬件实现以及配套的虚拟手术训练系统。其中虚拟手术系统首先对大量的医学图像进行图像分割、配准和三维重建。然后对重建的三维血管模型进行物理建模，用于模拟血管软组织在外力作用下的形变效果，并将反馈力的大小实时地反馈至力反馈设备，从而达到训练外科医生、规划手术方案的目的。</p>
+<p><strong>完成工作：</strong>基于Chai3D开源触觉反馈的系统框架搭建、利用Amira软件对医学图像进行三维重建、软组织的形变建模、碰撞检测以及触觉反馈算法的编程实现。</p>
+<p><img alt="" src="../../images/proj4.jpg" /></p>
+<h3 id="05-iauvc">05. 国际水下机器人竞赛仿真系统(IAUVC)</h3>
+<hr />
+<p>职位描述：碰撞检测模块负责人</p>
+<p><strong>项目描述：</strong>该项目组主要负责的是水下机器人的三维运动虚拟仿真，通过3D开源图形库OpenGL、面向对象语言c++在MFC对话框框架下，成功实现了水下场景的搭建（水流的流动、水中气泡的产生、水中能见度等），巡线、撞击目标物、射击、投掷、抓取等运动模拟，并实现了实时改变场景中物体的位置和观看视口的功能，主要用于比赛过程中的初期方案演示。</p>
+<p><strong>完成工作：</strong>仿真中整体虚拟场景的规划，实现虚拟机器人寻迹、投掷球、射球等动作，研究碰撞检测算法，实现机器人撞球、壁障等动作，网口通信编程及调试。</p>
+<p><img alt="" src="../../images/proj5.jpg" /></p>
+<h3 id="06-863">06. 多功能微型仿生鱼三维仿真系统（国家863项目）</h3>
+<hr />
+<p>职位描述：图形渲染模块负责人</p>
+<p><strong>项目描述：</strong>利用虚拟现实技术的机器鱼三维仿真系统是机器鱼研究开发中很好的图形交互工具。该项目主要用于研究机器鱼的避障能力；检验避障算法和行为策略的有效性；降低用实体机器鱼进行研究的成本和难度；减少对实体机器鱼的损害。通过建立较逼真的机器鱼模型和水下仿真环境，在开发的系统中实现虚拟场景中机器鱼的自主避障。</p>
+<p><strong>完成工作：</strong>利用3DSMAX建立仿生机器鱼模型，MFC界面设计，视景仿真环境建立，基于无特效的海底场景建模，碰撞检测算法研究。</p>
+<p><img alt="" src="../../images/proj6.jpg" /></p>
+<h3 id="07-leapmotion">07. 基于LeapMotion的交互式游戏设计</h3>
+<hr />
+<p>职位描述：项目负责人</p>
+<p><strong>项目描述：</strong>该课题主要利用Qt自带的OpenGL搭建一个图形渲染系统，通过读取三维模型，并生成Bullet碰撞检测可用的软体碰撞检测对象。然后通过实时读取LeapMotion的位置等相关信息，实现刚体球与软体对象进行碰撞检测，最后通过Bullet的实时解算完成模型的形变效果，达到交互游戏设计的目的。</p>
+<p><strong>完成工作：</strong>基于QtOpenGL的图形渲染框架搭建、LeapMotion交互实现、基于开源物理引擎Bullet的碰撞检测和形变仿真，几何模型与Bullet物理引擎的接口设计。</p>
+<p><img alt="" src="../../images/proj7.jpg" /></p>
+<h3 id="08">08. 柔软织物形变仿真平台的研究</h3>
+<hr />
+<p>职位描述：项目负责人</p>
+<p><strong>项目描述：</strong>该项目主要利用OpenGL实现布料等柔软织物在重力作用下与刚体对象的碰撞以及变形效果，该系统主要包括柔软织物和刚体等三维模型的加载、基于三角网格碰撞检测模型的匹配，纹理贴图等。通过该系统可进一步用于开发三维虚拟试衣系统。</p>
+<p><strong>完成工作：</strong>虚拟场景构建，基于Bullet碰撞检测和形变仿真，柔软织物的三维建模，纹理贴图，三维模型的加载，形变过程中数据的更新等任务。</p>
+<p><img alt="" src="../../images/proj8.jpg" /></p>
+<h3 id="09-vxworks">09. 基于VxWorks的声呐图像处理系统</h3>
+<hr />
+<p>职位描述：VxWorks负责人</p>
+<p><strong>项目描述：</strong>该项目利用VxWorks的多线程机制、实时多任务功能、网络通信功能，实现对水下机器人实时采集的声呐图像的实时处理，并将相关数据保存至硬盘。然后利用网口通信以FTP的方式获取处理后的数据，在PC机上进行图像的显示机。</p>
+<p><strong>完成工作：</strong>VxWorks的调式，BOOTROM的制作，系统的定制等工作，套接字Socket编程等工作。</p>
+<p><img alt="" src="../../images/proj9.jpg" /></p></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
